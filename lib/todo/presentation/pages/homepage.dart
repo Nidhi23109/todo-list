@@ -51,7 +51,7 @@ class HomeView extends StatelessWidget {
                       ),
                     ))
                   : TodoCard(),
-              Container(height: 50)
+              Container(height: 90)
             ],
           );
         }),

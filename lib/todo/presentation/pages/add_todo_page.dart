@@ -18,6 +18,8 @@ class AddTodoPage extends StatelessWidget {
         child: Column(
           children: [
             TextField(
+              minLines: 1,
+              maxLines: 8,
               controller: titleController,
               decoration: InputDecoration(labelText: 'Todo Title'),
             ),
@@ -32,7 +34,7 @@ class AddTodoPage extends StatelessWidget {
                   Get.back();
                 }
               },
-              child: Text('Add Todo'),
+              child: Text('Add Todo',style: TextStyle(color: Colors.black),),
             ),
           ],
         ),
